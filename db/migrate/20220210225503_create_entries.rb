@@ -3,7 +3,7 @@ class CreateEntries < ActiveRecord::Migration[7.0]
     create_table :entries do |t|
       t.string "title"
       t.text "description"
-      t.date "occurred_on"
+      t.date "occured_on"
       t.integer "place_id"
       
       t.timestamps

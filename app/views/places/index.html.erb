@@ -1,0 +1,9 @@
+<h1>Places I've Been</h1>
+
+<ul style="list-style: none; padding: 0;">
+  <% @places.each do |place| %>
+    <li><a href="/places/<%= place.id %>"><%= place.name %></a></li>
+  <% end %>
+</ul>
+
+<a href="/places/new">New Place</a>
